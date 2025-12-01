@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Goofy AI Chat</title>
+  <link rel="stylesheet" href="chat-style.css">
+</head>
+<body>
+  <header>
+    <div class="logo">Goofy AI Chat</div>
+    <button id="back-main">← Back to Main</button>
+  </header>
+
+  <!-- Chat Mode Selector -->
+  <section class="chat-mode">
+    <h2>Who are you chatting with?</h2>
+    <button id="solo-chat-btn">Solo Chat (Individual AI)</button>
+    <button id="group-chat-btn">Group Chat</button>
+  </section>
+
+  <!-- Chat Area -->
+  <section class="chat-area hidden" id="chat-area">
+    <div class="chat-header" id="chat-header">
+      <span id="chat-title">Chatting with: …</span>
+    </div>
+    <div class="chat-messages" id="chat-messages">
+      <!-- Messages will appear here -->
+    </div>
+    <div class="chat-input">
+      <input type="text" id="chat-text" placeholder="Type a message..." />
+      <button id="send-btn">Send</button>
+    </div>
+  </section>
+
+  <script src="chat-app.js"></script>
+</body>
+</html>
